@@ -7,6 +7,7 @@ body, button, input{
 }
 
 
+
 /*Header*/
 
 
@@ -61,7 +62,7 @@ header span a{
 }
 
 .recherche{
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 
 .champRechercher{
@@ -89,15 +90,16 @@ input[type=search]{
 }
 
 input[type=submit]{
-    width: 134px;
-    height: 51px;
+    width: 135px;
+    height: 50px;
     border: none;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     background-color: #0065FC;
     color: white;
     font-size: 1rem;
-    font-weight: 700;
+    font-weight: 680px;
+    
 }
 
 input[type=submit]:hover{
@@ -110,11 +112,14 @@ input[type=submit]:hover{
 .filtres{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    margin-left: 15px;
+    margin-bottom: 20px;
+   
+    
 }
 
 .filtres h3{
-    margin-right: 30px;
+    margin-right: 28px;
 }
 
 .filtres button{
@@ -155,6 +160,11 @@ input[type=submit]:hover{
     color: #0065FC;
 }
 
+.info .icone{
+    display: inline-flex;
+}
+
+
 main{
     max-width: 1340px;
     margin: 0 auto;
@@ -192,257 +202,239 @@ a:hover{
     color: #F2F2F2;
 }
 
-
-/*Images hôtels*/
-
-
-.cannebiere{
-    background-image: url(images/aubergecannebiere.jpg);
-}
-
-.hotelPort{
-    background-image: url(images/hotelport.jpg);
-}
-
-.hotelMouettes{
-    background-image:url(images/hotelmouettes.jpg);
-}
-
-.hotelMer{
-    background-image:url(images/hotelmer.jpg);
-}
-
-.aubergePanier{
-    background-image:url(images/aubergepanier.jpg);
-}
-
-.hotelAmina{
-    background-image:url(images/hotelamina.jpg);
-}
-
-.hotelSoleil{
-    background-image:url(images/hotelsoleil.jpg);
-}
-
-.chambreCoeurEau{
-    background-image:url(images/coeureau.jpg);
-}
-
-.hotelBleuBlanc{
-    background-image:url(images/bleublanc.jpg);
-}
-
-
-/*Images activités*/
-
-
-.activitePort{
-    background-image: url(images/vieuxport.jpg);
-    height: 393px;
-}
-
-.activitePomegues{
-    background-image: url(images/pomegues.jpg);
-    height: 180px;
-}
-
-.activiteFrioul{
-    background-image: url(images/frioul.jpg);
-    height: 109px;
-}
-
-.activiteCalanques{
-    background-image: url(images/calanques.jpg);
-    height: 393px;
-}
-
-.activiteNotreDame{
-    background-image: url(images/notredamedelagarde.jpg);
-    height: 140px;
-}
-
-.activiteLongchamp{
-    background-image: url(images/longchamp.jpg);
-    height: 154px;
-}
-
-
 /*Conteneur résultats*/
 
-
 .resultats{
-    margin-bottom: 60px;
-}
-
-.resultats small{
-    font-size: 0.75rem;
-    margin-bottom: 35px;
     display: flex;
-    align-items: center;
 }
-
-.resultats .icone{
-    height: 22px;
-    width: 22px;
-    color: #0065FC;
-    background-color: #DEEBFF;
-    border: 1px solid #F2F2F2;
-    border-radius: 50px;
-    margin-right: 12px;
-}
-
-.blockResultats{
-    display: flex;
-    justify-content: space-between;
-    max-height: 626px;
-}
-
 .resultatsPrincipaux{
-    display: flex;
-    flex-direction: column;
-    max-width: 880px;
-    padding: 40px 0;
-    background-color: #F2F2F2;
-    border-radius: 15px;
+    background: #F2F2F2;
+    border-radius: 20px;
+    padding-top: 2%;
+    margin: 0 1% 0 1%;
+    float: left;
+    max-width: 60%;
+    height: 600px;
 }
 
-.resultatsPrincipaux h2, .afficherPlus{
-    padding-left: 40px;
+.resultatsPrincipaux h2{
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    padding-left: 35px;
 }
 
-.afficherPlus{
-    font-size: 1.06rem;
-    font-weight: bold;
-}
-
-.resultatsPopulaires{
-    width: 420px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 40px;
-    padding: 40px 0;
-    background-color: #F2F2F2;
-    border-radius: 15px;
-}
-
-.resultatsPopulaires .fa-chart-line{
-    margin-left: 118px;
-}
-
-.resultatsPopulaires .conteneurCarte{
-    flex-direction: column;
-}
 
 .conteneurCarte{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin: 20px 0;
+}
+.conteneurCarte figure{
+    background: white;
+    border-radius: 20px;
+    width: 26%;
+    padding: 6px;
+    margin: 2%;
 }
 
-.carte{
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.247);
+.conteneurCarte img{
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+    padding-bottom: 2px;
+}
+.conteneurCarte figcaption{
+    display: block;
+    padding-top: 1px;
+    margin-top: 1%;
 }
 
-.carte h4{
-    padding-left: 12px;
-    margin: 2px 0 0 0;
+.conteneurCarte h4{
+    padding-bottom: 1px;
+    
+}
+.afficherPlus{
+    font-weight: 700;
+    padding-left: 35px;
 }
 
-.carte p{
-    font-size: 0.8rem;
-    padding-left: 12px;
-    margin: 6px 0;
+/*Populaires*/
+
+.resultatsPopulaires .fa-chart-line{
+    margin-left: 250px;
+    margin-top: 5px;
 }
 
-.carte .note{
-    padding-left: 12px;
+
+.cartePopulaire{
+    height: 29%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.resultatsPopulaires{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #F2F2F2;
+    border-radius: 20px;
+    width: 60%;
+    height: 600px;
+    margin-right: 2%;
+    margin-right: 2%;
+    padding-right: 0%;
+    max-width: 35%;
+    float: right;
+    padding-top: 2%;
+}
+
+.resultatsPopulaires h2{
+    display: flex;
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    margin-left: 20px;
+    justify-content: left;
+}
+.resultatsPopulaires .fa-chart-line{
+    float: right;
+}
+.conteneurCartePop{
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    justify-content: space-around;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.conteneurCartePop figure{
+    display: flex;
+    flex-wrap: nowrap;
+    background: white;
+    border-radius: 20px;
+    margin: 2%;
+    padding: 2px;
+    object-fit: cover;
+    margin-left: 2%;
+}
+
+.conteneurCartePop img{
+    width: 190px;
+    height: 140px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius:  20px;
+    vertical-align:middle; 
+    object-fit: cover;
+    position: relative;
+    margin: 2% 2% 2% 2%;
+}
+
+.conteneurCartePop figcaption{
+    width: 43%;
+    padding-left: 30px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+.cartePopulaire fa-star{
+    padding-top: 70px;
+}
+.starblue{
     color: #0065FC;
 }
 
-.carte:hover{
-    box-shadow: none;
+.stargrey{
+    color: #d8d8d8;
 }
-
-.cartePrincipal{
-    padding: 5px 5px 10px 5px;
-}
-
-.imgPrincipal{
-    width: 236px;
-    height: 114px;
-    background-size: cover;
-    background-position: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.cartePopulaire{
-    display: flex;
-    width: 334px;
-    height: 134px;
-    padding: 5px;
-}
-
-.imgPopulaire{
-    width: 127px;
-    height: 134px;
-    background-size: cover;
-    background-position: center;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-}
-
-.texteCarte p{
-    margin-bottom: 35%;
-}
-
-.lienCarte{
-    margin: 15px 0;
-    
-}
-
-
 /*Activités*/
-
-
-.activites{
-    margin-bottom: 62px;
-}
 
 .conteneurActivites{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: space-between;
-    justify-content: space-between;
-    height: 446px;
-    margin-top: 24px;
+    justify-content: center;
+    margin-top: 1%;
+    
 }
 
-.carteActivites{
-    border-radius: 10px;
-    box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.247);
+.activites h2{
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    margin: 4% 0 0 0%;
 }
 
-.imgActivite{
-    width: 302px;
-    background-size: cover;
-    background-position: center;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.activites figure{
+    background: rgb(245, 245, 245);
+    border-radius: 20px;
+    box-shadow:  0 1px 20px 1px rgb(221, 218, 218);
+    margin: 15px 25px 15px 25px;
+    
 }
 
-.carteActivites h4{
-    padding: 17px 22px;
-    margin: 0;
+.activites img{
+    width: 320px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    
 }
 
-.carteActivites:hover{
-    box-shadow: none;
+.activites figcaption{
+    font-size: 15px;
+    padding-left: 20px;
+}
+
+.activites .vieuxport{
+    height: 540px;
+}
+
+.vieuxport img{
+    height: 90%;
+    object-fit: cover;
+}
+
+.activites .pomegues{
+    height: 300px;
+}
+.pomegues img{
+    height: 80%;
+    object-fit: cover;
+}
+
+.activites .frioul{
+    height: 145px;
+    margin-top: 95px;
+    margin-bottom: 40%;
+}
+
+.frioul img{
+    height: 70%;
+    object-fit: cover;
+}
+.frioul h4{
+    display: flex;
+   margin-top: 2%;
+   margin-bottom: 1%;
+}
+
+.activites .calanques{
+    height: 540px;
+}
+.calanques img{
+    height: 90%;
+    object-fit: cover;
+}
+.activites .notredame{
+    height: 250px;
+}
+.notredame img{
+    height:80%;
+    object-fit: cover;
+}
+.activites .longchamp{
+    height: 250px;
+    margin-top: 40px;
+}
+.longchamp img{
+    height: 80%;
+    object-fit: cover;
 }
 
 
@@ -450,8 +442,13 @@ a:hover{
 
 
 footer{
-    width: 100%;
-    background-color: #F2F2F2;
+    display: flex;
+    justify-content: space-around;
+    background: #F2F2F2;
+    margin-top: 4%;
+    padding-top: 20px;
+    justify-content: flex-start;
+    
 }
 
 .contenuFooter{
@@ -585,6 +582,7 @@ ul{
     .blockResultats{
         flex-direction: column-reverse;
         max-height: none;
+       
     }
 
     .resultatsPopulaires{
@@ -637,7 +635,7 @@ ul{
     }
 
     .conteneurActivites{
-        flex-direction: row;
+        flex-direction: row !important;
         justify-content: space-evenly;
         height: auto;
     }
